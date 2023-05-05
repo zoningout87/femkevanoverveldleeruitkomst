@@ -1,0 +1,191 @@
+
+body {background-color: #1a1e3f;color: white;font-family: 'Josefin Sans', sans-serif; margin: 0px;padding: 0px;justify-content: center;}
+ 
+a {color: white;}
+h1 {font-family:'poppins', sans-serif;font-size: 50px;}
+h2{font-family:'poppins', sans-serif;font-size: 40px;}
+h3{font-family:'poppins', sans-serif;font-size: 30px;}
+h4{font-family:'poppins', sans-serif;font-size: 20px;}
+p{font-family:'poppins', sans-serif;font-size: 20px;}
+
+.header {width: 100%;background-image: url('images/achtergrondheader.jpg');min-height: 300px;font-family: 'Josefin Sans', sans-serif;position: sticky; top: 0;}
+
+.titel {font-size: 50px;margin-left: 100px;font-family: 'Josefin Sans', sans-serif;font-weight: 800;}
+ 
+nav {flex-direction: column;position: relative;margin: 20px auto 0;width: 600px;height: 50px;background: #1a1e3f;border-radius: 8px;font-size: 0;box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);}
+
+nav a {font-size: 15px;text-transform: uppercase;color: white;text-decoration: none;line-height: 50px;position: relative;z-index: 1;display: inline-block;text-align: center;}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    /*height: 5px; */
+    top: 0;
+    /*bottom: 0; */
+    z-index: 0;
+    background: #000008;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0px;
+}
+
+nav a:nth-child(2) {
+    width: 110px;
+}
+
+nav a:nth-child(2):hover~.animation {
+    width: 110px;
+    left: 100px;
+}
+
+nav a:nth-child(3) {
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 210px;
+}
+
+nav a:nth-child(4) {
+    width: 160px;
+}
+
+nav a:nth-child(4):hover~.animation {
+    width: 160px;
+    left: 310px;
+}
+
+nav a:nth-child(5) {
+    width: 120px;
+}
+
+nav a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 480px;
+}
+
+
+.inhoud {
+    border-radius: white;
+   flex-direction: column;
+   margin-right: 1200px;
+   width: 500px;
+   color: white;
+
+}
+
+.opdracht {
+    padding: 20px;
+    min-height: 200px;
+    color: white;
+    width: 700px;
+    border-style: solid;
+    border-color:white;
+    
+   
+}
+
+.oplossing{
+   
+    padding: 40px;
+    min-height: 400px;
+    color: white;
+    width: 1000px;
+    border-style: solid;
+    border-color:white;
+    margin-top: 20px;
+   margin-left: 20vw;
+}
+
+.oplossing2{
+    padding: 40px;
+    min-height: 100px;
+    color: white;
+    width: 1000px;
+   
+    margin-top: 20px;
+   margin-left: 20vw;
+}
+
+
+.imagestitel{
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.imageend img{
+    height: 300px;
+    width: 500px;
+    
+   
+}
+
+.imagetd img{
+    display: flex;
+ 
+    flex-direction: row;
+    min-height: 200px;
+    min-width: 250px;
+    
+   
+}
+
+.imagescherm img{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 500px;
+    
+   
+}
+
+.wrapper{
+     display: flex;
+    width: 200px;
+}
+
+.leerprofiel{
+    min-height: 100px;
+    width: 400px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    margin-left: 350px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.zijkant{
+    min-height: 100px;
+    width: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    margin-left: 50px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+
+.containerChallenge{
+    justify-content: center;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Leeruitkomsten</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="imgBx" style="--i:1;" data-id="content1">
+                <a href="aboutme/aboutme.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:2;" data-id="content2">
+                <a href="leerportfolio/leerportfolio.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:3;" data-id="content3">
+                <a href="frontendchallenges/introductiechallenge.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:4;" data-id="content4">
+                <a href="proftaak/truckerdirect.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:5;" data-id="content5">
+                <a href="pwachallenges/pwachallenges.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:6;" data-id="content6">
+                <a href="eventattend/eventattend.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:7;" data-id="content7">
+                <a href="passionprojects/introductiepassion.html"><img src="img1.jpg"></a>
+            </div>
+            <div class="imgBx" style="--i:8;" data-id="content8">
+                <a href="updateswebsite/update.html"><img src="img1.jpg"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content1">
+                <div class="card">
+                   
+                    <div class="textBx">
+                        <h1>Reflectie<br></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                    
+                    <div class="textBx">
+                        <h2>Leerportfolio<br> <span> </span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                   
+                    <div class="textBx">
+                        <h2>Frontend Challenges<br> <span> Various</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                    
+                    <div class="textBx">
+                        <h2>Proftaak<br> <span> TruckerDirect</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                   
+                    <div class="textBx">
+                        <h2>PWA Challenge<br> <span> Work in Process</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                    
+                    <div class="textBx">
+                        <h2>Event Attend<br> <span> Work in Process</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                   
+                    <div class="textBx">
+                        <h2>Passion Projects<br> <span> Graphic Novels</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx" id="content2">
+                <div class="card">
+                   
+                    <div class="textBx">
+                        <h2>Update Website<br> <span> Wat is nieuw?</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        let imgBx = document.querySelectorAll('.imgBx');
+        let contentBx = document.querySelectorAll('.contentBx');
+
+        for (let i = 0; i < imgBx.length; i++) {
+            imgBx[i].addEventListener('mouseover', function () {
+                for (let i = 0; i < imgBx.length; i++) {
+                    imgBx[i].className = 'imgBx';
+                }
+                this.className = 'imgBx active';
+
+                for (let i = 0; i < contentBx.length; i++) {
+                    contentBx[i].className = 'contentBx';
+                }
+                document.getElementById(this.dataset.id)
+                contentBx[i].className = 'contentBx active';
+            })
+        }
+
+
+    </script>
+</body>
+
+</html>
