@@ -10,7 +10,7 @@ body { display: grid;grid-template-columns: repeat(2, 1fr);grid-template-areas:
 "inhoud inhoud"
 "voetstuk voetstuk";}
 
-header { grid-area: kop;height: 100px;justify-content: flex-start;}
+header { grid-area: kop;height: 100px;justify-content: flex-start; font-family: 'Courier New', Courier, monospace;}
 
 main {display: grid;grid-template-columns: repeat(2, 1fr);grid-area: inhoud;}
 
